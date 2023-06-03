@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam Tarcker</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="scss/main.scss">
 
     <!-- front link of the titles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +26,24 @@
         </div>
 
 
-        <div class="beginTrack"></div>
+        <div class="beginTrack">
+            <span id="beginTrackLine"></span>
+            <span id="beginTrackText">Let's Begin Tracking!</span>
+        </div>
 
-        <div class="userEnter"></div>
+
+        <div class="userEnter">
+            <p>Step 1: Enter the game information.</p>
+            <p>Game Name</p>
+            <input>
+        </div>
 
         <div class="userAdd"></div>
+
+        <div class="gameHisBG">
+            <span id="gameHisLine"></span>
+            <span id="gameHisLineText">My Game History</span>
+        </div>
 
         <div class="gameHis"></div>
     </div>

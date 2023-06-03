@@ -1,0 +1,143 @@
+.container {  
+    margin-top: 5%;
+    margin-bottom: 5%;
+  
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 40px 20px;
+    grid-auto-flow: row;
+  }
+  
+.homePage { 
+    grid-area: 1 / 1 / 5 / 7; 
+    
+    width: calc(100% + 60%);
+    margin-left: -40%;
+    margin-right: -20%;
+    box-sizing: border-box;
+    background-color: #218b8b;
+    background-image: url("https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg");
+    background-size: 250% auto;
+    background-repeat: no-repeat;
+    background-position: -900px 0px;
+    background-position: fixed;
+    border-radius: 30pt;
+    
+}
+  
+  
+.webTitle { 
+    grid-area: 1 / 1 / 5 / 6;
+    /* border:1px solid rgb(255, 255, 255); */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* align vertically in the middle */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+
+    #mainTitle {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 40pt;
+        color: rgb(255, 155, 25);
+        text-shadow: 3px 4px 4px rgb(41, 41, 41);
+    }
+
+    #subTitle {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 30pt;
+        color: rgb(253, 206, 48);
+        text-shadow: 3px 2px 4px rgb(41, 41, 41);
+    }
+
+    #privacyStatement {
+        font-size: 12pt;
+        color: rgb(221, 220, 220);
+        text-shadow: 2px 2px 4px rgb(54, 54, 54);
+        
+    }
+}
+  
+  
+  
+.beginTrack { 
+    grid-area: 5 / 1 / 8 / 7; 
+    /*border:3px solid rgb(255, 0, 0);*/
+    text-align: center;
+    position: relative;
+
+    #beginTrackLine {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        border-top: 2px dashed #000;
+    }
+
+    #beginTrackText {
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+        background-color: #ffffff;
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 20pt;
+    }
+}
+  
+  
+  
+.userEnter { 
+    grid-area: 5 / 1 / 8 / 4; 
+    border:1px solid black;
+    margin-top: 15%;
+} 
+  
+  
+.userAdd { 
+    grid-area: 5 / 4 / 8 / 7; 
+    border:1px solid black;
+    margin-top: 15%;
+}
+  
+  
+.gameHisBG { 
+    grid-area: 8 / 1 / 11 / 7;
+    /* border:1px solid black; */
+    text-align: center;
+    position: relative;
+
+    #gameHisLine {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        border-top: 2px dashed #000;
+    }
+
+    #gameHisLineText {
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+        background-color: #ffffff;
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 20pt;
+    }
+}
+
+  
+  
+.gameHis { 
+    grid-area: 8 / 1 / 11 / 7;
+    border:1px solid black;
+    margin-top: 8%;
+}
+    
