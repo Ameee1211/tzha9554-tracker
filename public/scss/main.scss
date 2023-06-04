@@ -93,13 +93,22 @@
 }
   
   
-  
+ 
 .userEnter { 
     grid-area: 5 / 1 / 8 / 4; 
     border:1px solid black;
+    z-index: 2;
     margin-top: 15%;
+    
+    input {
+        z-index: 1;
+        font-size: 15pt;
+    }
+    
 } 
-  
+
+
+
   
 .userAdd { 
     grid-area: 5 / 4 / 8 / 7; 
