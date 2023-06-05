@@ -6,9 +6,9 @@
   margin-right: 20%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  gap: 40px 20px;
+  gap: 40px 80px;
   grid-auto-flow: row;
 }
 
@@ -25,6 +25,7 @@
   background-position: -900px 0px;
   background-position: fixed;
   border-radius: 30pt;
+  box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .webTitle {
@@ -79,24 +80,157 @@
 }
 
 .userEnter {
-  grid-area: 5/1/8/4;
-  border: 1px solid black;
+  grid-area: 5/1/9/4;
+  /* border:1px solid black; */
   z-index: 2;
   margin-top: 15%;
 }
-.userEnter input {
+.userEnter #step1 p {
+  font-size: 12pt;
+  color: #767676;
+}
+.userEnter .gameName p {
+  font-size: 18pt;
+}
+.userEnter .gameName input {
   z-index: 1;
   font-size: 15pt;
+  width: 95%;
+  height: 30px;
+  border: 1px solid black;
+}
+.userEnter .playtime p {
+  font-size: 18pt;
+}
+.userEnter .playtime #enterPlaytimeSection {
+  /* make the playtime input and "Hours" in the same line  */
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+}
+.userEnter .playtime #enterPlaytimeSection input {
+  z-index: 1;
+  font-size: 15pt;
+  width: 95%;
+  height: 30px;
+  border: 1px solid black;
+}
+.userEnter .playtime #enterPlaytimeSection #playtimeUnit {
+  font-size: 15pt;
+  display: flex;
+}
+.userEnter .category p {
+  font-size: 18pt;
+}
+.userEnter .category select {
+  z-index: 1;
+  font-size: 15pt;
+  width: 95%;
+  height: 30px;
+}
+.userEnter .category #defaultOption {
+  color: #767676;
+}
+.userEnter button {
+  margin-top: 20px;
+  margin-right: 5%;
+  font-size: 18pt;
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+}
+.userEnter #checkButton {
+  background-color: #46b8b8;
+  color: white;
+  border: 0px;
+}
+.userEnter #checkButton:hover {
+  background-color: #1b9494;
+  color: white;
+  border: 0px;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.userEnter #clearButton {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+.userEnter #clearButton:hover {
+  background-color: rgb(234, 234, 234);
+  color: gray;
+  border: 1px solid gray;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.userEnter #enterErrorMessage {
+  color: #cf0000;
+  font-style: bold;
 }
 
 .userAdd {
-  grid-area: 5/4/8/7;
-  border: 1px solid black;
+  grid-area: 5/4/9/7;
+  /* border:1px solid black; */
   margin-top: 15%;
+}
+.userAdd #step2 p {
+  font-size: 12pt;
+  color: #767676;
+}
+.userAdd .checkCard {
+  background-color: #BDF1F1;
+  border-radius: 30px;
+  box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.15);
+}
+.userAdd .checkGameName p {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  font-size: 18pt;
+  color: #bbbbbb;
+}
+.userAdd .checkCategory, .userAdd .checkPlaytime, .userAdd .checkTotalPlaytime, .userAdd .checkDate {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.userAdd .checkCategory p, .userAdd .checkPlaytime p, .userAdd .checkTotalPlaytime p, .userAdd .checkDate p {
+  font-size: 15pt;
+}
+.userAdd .checkCategory #categoryOutput, .userAdd .checkCategory #playtimeOutput, .userAdd .checkCategory #totalPlaytimeOutput, .userAdd .checkCategory #dateOutput, .userAdd .checkPlaytime #categoryOutput, .userAdd .checkPlaytime #playtimeOutput, .userAdd .checkPlaytime #totalPlaytimeOutput, .userAdd .checkPlaytime #dateOutput, .userAdd .checkTotalPlaytime #categoryOutput, .userAdd .checkTotalPlaytime #playtimeOutput, .userAdd .checkTotalPlaytime #totalPlaytimeOutput, .userAdd .checkTotalPlaytime #dateOutput, .userAdd .checkDate #categoryOutput, .userAdd .checkDate #playtimeOutput, .userAdd .checkDate #totalPlaytimeOutput, .userAdd .checkDate #dateOutput {
+  color: #bbbbbb;
+}
+.userAdd .addButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.userAdd .addButton #addButton {
+  font-size: 18pt;
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #46b8b8;
+  color: white;
+  border: 0px;
+}
+.userAdd .addButton #addButton:hover {
+  background-color: #1b9494;
+  color: white;
+  border: 0px;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.userAdd #checkErrorMessage {
+  padding-top: 10px;
+  color: #cf0000;
+  font-style: bold;
 }
 
 .gameHisBG {
-  grid-area: 8/1/11/7;
+  grid-area: 9/1/11/7;
   /* border:1px solid black; */
   text-align: center;
   position: relative;
@@ -119,7 +253,7 @@
 }
 
 .gameHis {
-  grid-area: 8/1/11/7;
+  grid-area: 9/1/12/7;
   border: 1px solid black;
   margin-top: 8%;
 }/*# sourceMappingURL=main.css.map */
