@@ -525,3 +525,1031 @@ ul {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPad */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    .container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.1fr 0.1fr 0.1fr 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-auto-columns: 1fr;
+        gap: 40px 80px;
+        grid-auto-flow: row;
+      }
+    
+
+      .homePage {
+        grid-area: 1/1/5/7;
+        
+        width: 130%;
+        margin-left: -20%;
+        margin-right: -10%;
+        
+        background-size: 350% auto;
+        
+        background-position: -400px 0px;
+        
+      }
+      
+      .webTitle {
+          grid-area: 1/1/5/7;
+         
+          margin-top: 10%;
+          margin-bottom: 10%;
+          
+          #mainTitle {
+              font-size: 50pt;
+          }
+      
+          #subTitle {
+              font-size: 40pt;
+          }
+      
+          #privacyStatement {
+              font-size: 15pt;
+          }
+      }
+      
+      
+      .beginTrack {
+          grid-area: 5 / 1 / 13 / 7;
+      
+          #beginTrackLine {
+              top: 20px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              border-top: 2px dashed #000;
+          }
+      
+          #beginTrackText {
+              padding: 0 10px;
+              font-size: 30pt;
+          }
+      }
+      
+      
+      .userEnter {
+          grid-area: 5/1/9/7;
+      
+          #step1 p {
+              font-size: 12pt;
+          }
+      
+          .gameName p {
+              font-size: 18pt;
+          }
+      
+          .gameName input {
+              z-index: 1;
+              font-size: 15pt;
+              width: 95%;
+              height: 30px;
+          }
+      
+          .playtime {
+              p {
+                  font-size: 18pt;
+              }
+      
+              #enterPlaytimeSection input {
+                  z-index: 1;
+                  font-size: 15pt;
+                  width: 95%;
+                  height: 30px;
+              }
+              #enterPlaytimeSection #playtimeUnit {
+                  font-size: 15pt;
+              }
+          }
+      
+          .category {
+              p {
+                  font-size: 18pt;
+              }
+              select {
+                  z-index: 1;
+                  font-size: 15pt;
+                  width: 95%;
+                  height: 30px;
+              }
+          }
+      
+          button {
+              margin-top: 20px;
+              margin-right: 5%;
+              font-size: 18pt;
+              width: 30%;
+              height: 50px;
+              border-radius: 10px;
+          }
+      
+          #checkButton {
+              background-color: #46b8b8;
+              color: white;
+              border: 0px;
+          }
+      
+          #checkButton:hover {
+              background-color: #1b9494;
+              color: white;
+              border: 0px;
+              transform: translateY(-2px);
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          #clearButton {
+              background-color: white;
+              color: gray;
+              border: 1px solid gray;
+          }
+      
+          #clearButton:hover {
+              background-color: rgb(234, 234, 234);
+              color: gray;
+              border: 1px solid gray;
+              transform: translateY(-2px);
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          #enterErrorMessage {
+              color: #cf0000;
+              font-style: bold;
+          }
+          
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      .userAdd {
+          grid-area: 9 / 1 / 13 / 7;
+          /* border:1px solid black; */
+          margin-top: 5%;
+          z-index: 5;
+      
+          #step2 p {
+          font-size: 12pt;
+          color: #767676;
+          }
+      
+          .checkCard {
+          background-color: #BDF1F1;
+          border-radius: 30px;
+          box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.15);
+          }
+      
+          .checkGameName p {
+          display: flex;
+          justify-content: center;
+          padding-top: 5%;
+          font-size: 18pt;
+          color: #bbbbbb;
+          }
+      
+          .checkCategory{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 15pt;
+              }
+      
+              #categoryOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          .checkPlaytime{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 15pt;
+              }
+      
+              #playtimeOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          .checkTotalPlaytime{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 15pt;
+              }
+      
+             #totalPlaytimeOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          .checkDate{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 15pt;
+              }
+      
+              #dateOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          
+          
+          
+          .addButton {
+              display: flex;
+              justify-content: center;
+              padding-top: 5%;
+              padding-bottom: 5%;
+              
+      
+              #addButton {
+                  font-size: 18pt;
+                  width: 30%;
+                  height: 50px;
+                  border-radius: 10px;
+                  background-color: #46b8b8;
+                  color: white;
+                  border: 0px;
+              }
+              #addButton:hover {
+                  background-color: #1b9494;
+                  color: white;
+                  border: 0px;
+                  transform: translateY(-2px);
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+              }
+          }
+      
+          #checkErrorMessage {
+          padding-top: 10px;
+          color: #cf0000;
+          font-style: bold;
+          }
+      }
+      
+      
+      
+      
+      .gameHisBG {
+          grid-area: 13 / 1 / 15 / 7;
+          /* border:1px solid black; */
+          text-align: center;
+          position: relative;
+      
+          #gameHisLine {
+              position: absolute;
+              top: 20px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              border-top: 2px dashed #000;
+          }
+          #gameHisLineText {
+              position: relative;
+              display: inline-block;
+              padding: 0 10px;
+              background-color: #ffffff;
+              font-family: "Sedgwick Ave", cursive;
+              font-size: 30pt;
+          }
+      }
+      
+      .gameHis {
+          grid-area: 13 / 1 / 15 / 7;
+          /* border: 1px solid black; */
+          margin-top: 5%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          #clearGameHis {
+              font-size: 12pt;
+              width: 20%;
+              height: 40px;
+              border-radius: 10px;
+              background-color: white;
+              color: gray;
+              border: 1px solid gray;
+              margin-top: 10px;
+              margin-left: auto;
+              position: relative;
+              z-index: 5;
+          }
+          #clearGameHis:hover {
+              background-color: rgb(234, 234, 234);
+              color: gray;
+              border: 1px solid gray;
+              transform: translateY(-2px);
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          #gameHisList {
+              position: absolute;
+              padding-top: 70px;
+              padding-bottom: 15%;
+              justify-content: center;
+              width: 100%;
+              li .top{
+                  display: none;
+                  justify-content: space-between;
+                  padding: 20px 20px 10px;
+                  color: rgb(0, 0, 0);
+                  font-size: 15pt;
+                  font-weight: bold;
+              }
+              li:first-child .top{
+                  display: flex;
+              }
+          }
+      }
+      
+      
+      
+      ul {
+          list-style-type: none;
+          left: 0;
+          padding: 0;
+          margin: 0;
+      }
+      
+      .gameCard {
+          font-size: 15pt;
+          grid-row: 9/12;
+          margin-bottom: 20px;
+          /* width: 800px; */
+          padding: 20px;
+          border-radius: 20px;
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          overflow: hidden; 
+      
+          strong{
+              font-weight: normal;
+              color: #666;
+              padding-bottom: 5px;
+              display: inline-block;
+              font-size: 12pt;
+          }
+          #defaultInfo, #details, #detailInfo{
+              display: flex;
+              justify-content: space-between; 
+              align-items: center;
+          }
+      }
+      
+      
+      
+      #detailInfo{
+          border-top: 1px solid #ddd;
+          padding-top: 20px;
+          width: 90%;
+      }
+      #defaultInfo{
+        width: 90%;
+      }
+      
+      
+      
+      
+      
+      .gameCard {
+          #defaultInfo {
+              #gameName, #category{ 
+                  margin-left: 10%;
+              }
+      
+              #palytime, #totalPlaytime{
+                  margin-right: 10%; 
+                  width: 150px;
+              }
+          }
+      
+          #details {
+              #gameName, #category {
+                  margin-left: 10%;
+              }
+          
+              #palytime, #totalPlaytime {
+                  margin-right: 10%; 
+                  width: 150px;
+              }
+          }
+      
+      
+          button {
+              margin-left: auto; 
+              font-size: 15pt;
+              background-color: white;
+              border: none; 
+              padding: 0; 
+              margin-left: 92%;
+              position: relative;
+              top: -40px;
+          }
+      }
+      
+      
+      
+      
+      .deleteButton {
+          font-size: 8pt;
+          width: -moz-fit-content;
+          width: fit-content;
+          height: 40px;
+          border-radius: 10px;
+          background-color: white;
+          color: gray;
+          border: 1px solid gray;
+          margin-top: 10px;
+          margin-left: auto;
+        
+      }
+      
+      .deleteButton:hover {
+          background-color: rgb(234, 234, 234);
+          color: gray;
+          border: 1px solid gray;
+          transform: translateY(-2px);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+      }
+      
+      .gameCard .deleteButton{
+          padding: 0 10px;
+          border: 1px solid gray;
+          margin-left: 85%;
+          top: -50px;
+      }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone */
+@media (max-width: 600px) {
+    
+    .container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: 0.1fr 0.1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-auto-columns: 1fr;
+        gap: 40px 0px;
+        grid-auto-flow: row;
+      }
+    
+
+      .homePage {
+        grid-area: 1/1/5/7;
+        
+        width: 150%;
+        margin-left: -40%;
+        margin-right: -10%;
+        
+        background-size: 350% auto;
+        
+        background-position: -1300px 0px;
+        
+      }
+      
+      .webTitle {
+          grid-area: 1/1/5/7;
+         
+          margin-top: 0;
+          margin-bottom: 0;
+          
+          #mainTitle {
+              font-size: 30pt;
+              margin-top: 0px;
+              margin-bottom: 0px;
+          }
+      
+          #subTitle {
+              font-size: 25pt;
+              margin-top: 0px;
+              margin-bottom: 0px;
+          }
+      
+          #privacyStatement {
+              font-size: 10pt;
+          }
+      }
+      
+      
+      .beginTrack {
+          grid-area: 5 / 1 / 13 / 7;
+      
+          #beginTrackLine {
+              top: 10px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              border-top: 2px dashed #000;
+          }
+      
+          #beginTrackText {
+              padding: 0 10px;
+              font-size: 20pt;
+          }
+      }
+      
+      
+      .userEnter {
+          grid-area: 5/1/9/7;
+      
+          #step1 p {
+              font-size: 8pt;
+          }
+      
+          .gameName p {
+              font-size: 14pt;
+          }
+      
+          .gameName input {
+              z-index: 1;
+              font-size: 12pt;
+              width: 95%;
+              height: 20px;
+          }
+      
+          .playtime {
+              p {
+                  font-size: 14pt;
+              }
+      
+              #enterPlaytimeSection input {
+                  z-index: 1;
+                  font-size: 12pt;
+                  width: 95%;
+                  height: 20px;
+              }
+              #enterPlaytimeSection #playtimeUnit {
+                  font-size: 14pt;
+              }
+          }
+      
+          .category {
+              p {
+                  font-size: 14pt;
+              }
+              select {
+                  z-index: 1;
+                  font-size: 12pt;
+                  width: 95%;
+                  height: 22px;
+              }
+          }
+      
+          button {
+              margin-top: 20px;
+              margin-right: 5%;
+              font-size: 14pt;
+              width: 30%;
+              height: 30px;
+              border-radius: 8px;
+          }
+      
+          #checkButton {
+              background-color: #46b8b8;
+              color: white;
+              border: 0px;
+          }
+      
+          #checkButton:hover {
+              background-color: #1b9494;
+              color: white;
+              border: 0px;
+              transform: translateY(-2px);
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          #clearButton {
+              background-color: white;
+              color: gray;
+              border: 1px solid gray;
+          }
+      
+          #clearButton:hover {
+              background-color: rgb(234, 234, 234);
+              color: gray;
+              border: 1px solid gray;
+              transform: translateY(-2px);
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          #enterErrorMessage {
+              color: #cf0000;
+              font-style: bold;
+              font-size: 12pt;
+          }
+          
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      .userAdd {
+          grid-area: 9 / 1 / 13 / 7;
+          /* border:1px solid black; */
+          margin-top: 5%;
+          z-index: 5;
+      
+          #step2 p {
+          font-size: 10pt;
+          color: #767676;
+          }
+      
+          .checkCard {
+          background-color: #BDF1F1;
+          border-radius: 30px;
+          box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.15);
+          }
+      
+          .checkGameName p {
+          display: flex;
+          justify-content: center;
+          padding-top: 5%;
+          font-size: 14pt;
+          color: #bbbbbb;
+          }
+      
+          .checkCategory{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 12pt;
+              }
+      
+              #categoryOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          .checkPlaytime{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 12pt;
+              }
+      
+              #playtimeOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          .checkTotalPlaytime{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 12pt;
+              }
+      
+             #totalPlaytimeOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          .checkDate{
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10%;
+              padding-right: 10%;
+      
+              p {
+                  font-size: 12pt;
+              }
+      
+              #dateOutput {
+                  color: #bbbbbb;
+              }
+          }
+      
+          
+          
+          
+          .addButton {
+              display: flex;
+              justify-content: center;
+              padding-top: 5%;
+              padding-bottom: 5%;
+              
+      
+              #addButton {
+                  font-size: 14pt;
+                  width: 30%;
+                  height: 30px;
+                  border-radius: 8px;
+                  background-color: #46b8b8;
+                  color: white;
+                  border: 0px;
+              }
+              #addButton:hover {
+                  background-color: #1b9494;
+                  color: white;
+                  border: 0px;
+                  transform: translateY(-2px);
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+              }
+          }
+      
+          #checkErrorMessage {
+          padding-top: 10px;
+          color: #cf0000;
+          font-style: bold;
+          font-size: 12pt;
+          }
+      }
+      
+      
+      
+      
+      .gameHisBG {
+          grid-area: 13 / 1 / 15 / 7;
+          /* border:1px solid black; */
+          text-align: center;
+          position: relative;
+      
+          #gameHisLine {
+              position: absolute;
+              top: 12px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              border-top: 2px dashed #000;
+          }
+          #gameHisLineText {
+              position: relative;
+              display: inline-block;
+              padding: 0 10px;
+              background-color: #ffffff;
+              font-family: "Sedgwick Ave", cursive;
+              font-size: 20pt;
+          }
+      }
+      
+      .gameHis {
+          grid-area: 13 / 1 / 15 / 7;
+          /* border: 1px solid black; */
+          margin-top: 2%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          #clearGameHis {
+              font-size: 8pt;
+              width: 40%;
+              height: 30px;
+              border-radius: 10px;
+              background-color: white;
+              color: gray;
+              border: 1px solid gray;
+              margin-top: 40px;
+              margin-left: auto;
+              position: relative;
+              z-index: 5;
+          }
+          #clearGameHis:hover {
+              background-color: rgb(234, 234, 234);
+              color: gray;
+              border: 1px solid gray;
+              transform: translateY(-2px);
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          #gameHisList {
+              position: absolute;
+              padding-top: 70px;
+              padding-bottom: 15%;
+              justify-content: center;
+              width: 100%;
+              li .top{
+                  display: none;
+                  justify-content: space-between;
+                  padding: 20px 20px 10px;
+                  color: rgb(0, 0, 0);
+                  font-size: 12pt;
+                  font-weight: bold;
+              }
+              li:first-child .top{
+                  display: flex;
+              }
+          }
+      }
+      
+      
+      
+      ul {
+          list-style-type: none;
+          left: 0;
+          padding: 0;
+          margin: 0;
+      }
+      
+      .gameCard {
+          font-size: 12pt;
+          grid-row: 9/12;
+          margin-bottom: 20px;
+          /* width: 800px; */
+          padding: 20px;
+          border-radius: 20px;
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          overflow: hidden; 
+      
+          strong{
+              font-weight: normal;
+              color: #666;
+              padding-bottom: 5px;
+              display: inline-block;
+              font-size: 8pt;
+          }
+          #defaultInfo, #details, #detailInfo{
+              display: flex;
+              justify-content: space-between; 
+              align-items: center;
+          }
+      }
+      
+      
+      
+      #detailInfo{
+          border-top: 1px solid #ddd;
+          padding-top: 20px;
+          width: 90%;
+      }
+      #defaultInfo{
+        width: 90%;
+      }
+      
+      
+      
+      
+      
+      .gameCard {
+          #defaultInfo {
+              #gameName, #category{ 
+                  margin-left: 5%;
+              }
+      
+              #palytime, #totalPlaytime{
+                  margin-right: -10%; 
+                  width: 150px;
+              }
+          }
+      
+          #details {
+              #gameName, #category {
+                  margin-left: 5%;
+              }
+          
+              #palytime, #totalPlaytime {
+                  margin-right: -10%; 
+                  width: 150px;
+              }
+          }
+      
+      
+          button {
+              margin-left: auto; 
+              font-size: 14pt;
+              background-color: white;
+              border: none; 
+              padding: 0; 
+              margin-left: 92%;
+              position: relative;
+              top: -20px;
+          }
+      }
+      
+      
+      
+      
+      .deleteButton {
+          font-size: 8pt;
+          width: -moz-fit-content;
+          width: fit-content;
+          height: 20px;
+          border-radius: 8px;
+          background-color: white;
+          color: gray;
+          border: 1px solid gray;
+          margin-top: 10px;
+          margin-left: auto;
+        
+      }
+      
+      .deleteButton:hover {
+          background-color: rgb(234, 234, 234);
+          color: gray;
+          border: 1px solid gray;
+          transform: translateY(-2px);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+      }
+      
+      .gameCard .deleteButton{
+          padding: 0 10px;
+          border: 1px solid gray;
+          margin-left: 85%;
+          top: -50px;
+      }
+
+  }
+
+
+
