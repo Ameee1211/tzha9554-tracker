@@ -40,18 +40,18 @@
 }
 .webTitle #mainTitle {
   font-family: "Sedgwick Ave", cursive;
-  font-size: 40pt;
+  font-size: 50pt;
   color: rgb(255, 155, 25);
   text-shadow: 3px 4px 4px rgb(41, 41, 41);
 }
 .webTitle #subTitle {
   font-family: "Sedgwick Ave", cursive;
-  font-size: 30pt;
+  font-size: 40pt;
   color: rgb(253, 206, 48);
   text-shadow: 3px 2px 4px rgb(41, 41, 41);
 }
 .webTitle #privacyStatement {
-  font-size: 12pt;
+  font-size: 15pt;
   color: rgb(221, 220, 220);
   text-shadow: 2px 2px 4px rgb(54, 54, 54);
 }
@@ -64,7 +64,7 @@
 }
 .beginTrack #beginTrackLine {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 0;
   right: 0;
   height: 1px;
@@ -76,7 +76,7 @@
   padding: 0 10px;
   background-color: #ffffff;
   font-family: "Sedgwick Ave", cursive;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 .userEnter {
@@ -189,16 +189,52 @@
   font-size: 18pt;
   color: #bbbbbb;
 }
-.userAdd .checkCategory, .userAdd .checkPlaytime, .userAdd .checkTotalPlaytime, .userAdd .checkDate {
+.userAdd .checkCategory {
   display: flex;
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
 }
-.userAdd .checkCategory p, .userAdd .checkPlaytime p, .userAdd .checkTotalPlaytime p, .userAdd .checkDate p {
+.userAdd .checkCategory p {
   font-size: 15pt;
 }
-.userAdd .checkCategory #categoryOutput, .userAdd .checkCategory #playtimeOutput, .userAdd .checkCategory #totalPlaytimeOutput, .userAdd .checkCategory #dateOutput, .userAdd .checkPlaytime #categoryOutput, .userAdd .checkPlaytime #playtimeOutput, .userAdd .checkPlaytime #totalPlaytimeOutput, .userAdd .checkPlaytime #dateOutput, .userAdd .checkTotalPlaytime #categoryOutput, .userAdd .checkTotalPlaytime #playtimeOutput, .userAdd .checkTotalPlaytime #totalPlaytimeOutput, .userAdd .checkTotalPlaytime #dateOutput, .userAdd .checkDate #categoryOutput, .userAdd .checkDate #playtimeOutput, .userAdd .checkDate #totalPlaytimeOutput, .userAdd .checkDate #dateOutput {
+.userAdd .checkCategory #categoryOutput {
+  color: #bbbbbb;
+}
+.userAdd .checkPlaytime {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.userAdd .checkPlaytime p {
+  font-size: 15pt;
+}
+.userAdd .checkPlaytime #playtimeOutput {
+  color: #bbbbbb;
+}
+.userAdd .checkTotalPlaytime {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.userAdd .checkTotalPlaytime p {
+  font-size: 15pt;
+}
+.userAdd .checkTotalPlaytime #totalPlaytimeOutput {
+  color: #bbbbbb;
+}
+.userAdd .checkDate {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.userAdd .checkDate p {
+  font-size: 15pt;
+}
+.userAdd .checkDate #dateOutput {
   color: #bbbbbb;
 }
 .userAdd .addButton {
@@ -237,7 +273,7 @@
 }
 .gameHisBG #gameHisLine {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 0;
   right: 0;
   height: 1px;
@@ -249,11 +285,146 @@
   padding: 0 10px;
   background-color: #ffffff;
   font-family: "Sedgwick Ave", cursive;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 .gameHis {
   grid-area: 9/1/12/7;
-  border: 1px solid black;
-  margin-top: 8%;
+  /* border: 1px solid black; */
+  margin-top: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gameHis #clearGameHis {
+  font-size: 12pt;
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+  margin-top: 10px;
+  margin-left: auto;
+  position: relative;
+  z-index: 5;
+}
+.gameHis #clearGameHis:hover {
+  background-color: rgb(234, 234, 234);
+  color: gray;
+  border: 1px solid gray;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.gameHis #gameHisList {
+  position: absolute;
+  padding-top: 70px;
+  padding-bottom: 15%;
+  justify-content: center;
+  width: 100%;
+}
+.gameHis #gameHisList li .top {
+  display: none;
+  justify-content: space-between;
+  padding: 20px 20px 10px;
+  color: rgb(0, 0, 0);
+  font-size: 15pt;
+  font-weight: bold;
+}
+.gameHis #gameHisList li:first-child .top {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.gameCard {
+  font-size: 15pt;
+  grid-row: 9/12;
+  margin-bottom: 20px;
+  /* width: 800px; */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.gameCard strong {
+  font-weight: normal;
+  color: #666;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-size: 12pt;
+}
+.gameCard #defaultInfo, .gameCard #details, .gameCard #detailInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#detailInfo {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  width: 90%;
+}
+
+#defaultInfo {
+  width: 90%;
+}
+
+.gameCard #defaultInfo #gameName, .gameCard #defaultInfo #category {
+  margin-left: 10%;
+}
+.gameCard #defaultInfo #palytime, .gameCard #defaultInfo #totalPlaytime {
+  margin-right: 10%;
+  width: 150px;
+}
+.gameCard #details #gameName, .gameCard #details #category {
+  margin-left: 10%;
+}
+.gameCard #details #palytime, .gameCard #details #totalPlaytime {
+  margin-right: 10%;
+  width: 150px;
+}
+.gameCard button {
+  margin-left: auto;
+  font-size: 15pt;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-left: 92%;
+  position: relative;
+  top: -40px;
+}
+
+.deleteButton {
+  font-size: 10pt;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.deleteButton:hover {
+  background-color: rgb(234, 234, 234);
+  color: gray;
+  border: 1px solid gray;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gameCard .deleteButton {
+  padding: 0 10px;
+  border: 1px solid gray;
+  margin-left: 90%;
+  top: -50px;
 }/*# sourceMappingURL=main.css.map */
