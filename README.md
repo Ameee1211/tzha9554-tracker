@@ -1,5 +1,15 @@
 # tzha9554-tracker
 
+**Live version: https://ameee1211.github.io/tzha9554-tracker/**
+
+The files at the root of this repository (`index.html`, `script.js`, `scss/main.css`) are the
+compiled version of the app, and they are what GitHub Pages serves. They are plain static
+files — no server and no build step — so the link above works on any phone or computer.
+
+`public/` and `server.js` are the original source and the local Express set-up from the course.
+To run that version instead, `npm install` then `npm run dev`. The compiled files in the root
+are generated from it by `parcel build`.
+
 <br>
 <br>
 <br>
